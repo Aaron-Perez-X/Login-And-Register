@@ -1,0 +1,9 @@
+@font-face {
+    font-family: titles;
+    src: url(lexend-VariableFont_wght.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: simpleText;
+    src: url(roboto-Light.ttf) format(truetype);
+}

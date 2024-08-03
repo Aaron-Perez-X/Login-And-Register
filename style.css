@@ -1,0 +1,158 @@
+:root {
+    --colorAzul: #064C91;
+    --colorBlanco: #fafafa;
+    --colorVerde: #2C931C;
+    --colorVerdeHover: #2ab315;
+    --colorGris: #F0F1F1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--colorAzul);
+    display: flex;
+    justify-content: space-between;
+    font-family: simpleText;
+}
+
+.header {
+    width: 45%;
+    height: 100vh;
+}
+
+.header__container {
+    width: 90%;
+    height: auto;
+    padding: 1%;
+    text-align: center;
+}
+
+.header__container h1 {
+    font-family: titles;
+    font-size: 3em;
+    text-wrap: balance;
+}
+
+.header__container p {
+    font-size: 1.15em;
+}
+
+.header__container--textProperties {
+    letter-spacing: 1px;
+    margin-bottom: 12.5px;
+    color: var(--colorBlanco);
+}
+
+.header__container a {
+    padding: 8.5px 75px;
+    border: 1px solid var(--colorBlanco);
+    border-radius: 5px;
+    font-size: 1.15em;
+    position: relative;
+    top: 15px;
+    letter-spacing: 0.75px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 800ms ease-out;
+    background-color: var(--colorBlanco);
+    color: black;
+}
+
+.header__container a:hover {
+    background-color: transparent;
+    border: 1px solid var(--colorBlanco);
+    color: var(--colorBlanco);
+}
+
+.main {
+    width: 55%;
+    height: 100vh;
+    background-color: var(--colorBlanco);
+}
+
+.main h2 {
+    font-family: titles;
+    font-size: 2.25em;
+    text-wrap: balance;
+    text-align: center;
+}
+
+.center--elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__form {
+    width: 47.5%;
+    height: 70vh;
+    text-align: center;
+    padding: 3%;
+}
+
+.main__form--labels {
+    text-align: start;
+    display: block;
+    margin-bottom: 7.5px;
+    font-size: 1.25em;
+}
+
+.main__form input {
+    width: 100%;
+    height: 12.5%;
+    padding: 3%;
+    border: none;
+    border-radius: 2.5px;
+    margin-bottom: 7.5px;
+    background-color: var(--colorGris);
+}
+
+.main__form .main__form--submitButton{
+    height: 10%;
+    margin: 12.5px 0;
+    background-color: var(--colorVerde);
+    color: var(--colorBlanco);
+    font-size: 1.15em;
+    letter-spacing: 0.75px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 600ms ease-out;
+}
+
+.main__form .main__form--submitButton:hover{
+    background-color: var(--colorVerdeHover);
+}
+
+.main__form p a {
+    color: #48e;
+}
+
+@media (max-width: 500px) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header,
+    .main {
+        width: 100%;
+    }
+
+    .header__container,
+    .main__form {
+        width: 70%;
+    }
+
+    .main h2{
+        font-size: 2em;
+    }
+}

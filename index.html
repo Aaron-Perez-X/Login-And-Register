@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="author" content="Aaron Perz">
+    <title>Login and Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header class="header center--elements">
+        <div class="header__container">
+            <h1 class="header__container--textProperties">Welcome To Login And Register</h1>
+            <p class="header__container--textProperties">Create An Account And Start Investing With Us, The Best Company Of All!</p>
+            <a href="Register.html" id="inputRedirectButton">Sign in</a>
+        </div>
+    </header>
+
+    <main class="main center--elements">
+        <h2>Login Into Your Account:</h2>
+        <form class="main__form">
+            <label for="email" class="main__form--labels">Email:</label>
+            <input type="email" name="email" id="emailInput" placeholder="Insert Your Email">
+
+            <label for="password" class="main__form--labels">Password:</label>
+            <input type="password" name="password" id="passwordInput" placeholder="Insert Your Password">
+
+            <input class="main__form--submitButton" type="submit" value="Login">
+
+            <p>Don't have an Account? <a href="register.html">Sign in.</a></p>
+        </form>
+    </main>
+</body>
+</html>
